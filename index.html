@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Wichtelbriefe">
+  <title>Wichtelbriefe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="buehne" aria-live="polite"></main>
+  <nav id="steuerung">
+    <button id="zurueck" aria-label="Vorheriger Brief">‹</button>
+    <span id="position"></span>
+    <button id="weiter" aria-label="Nächster Brief">›</button>
+  </nav>
+  <div id="vorschau-dialog" hidden>
+    <form id="vorschau-form">
+      <label>PIN <input id="pin" type="password" inputmode="numeric" autocomplete="off"></label>
+      <button type="submit">Öffnen</button>
+    </form>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

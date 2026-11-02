@@ -1,0 +1,222 @@
+[
+  {
+    "datum": "2026-11-28",
+    "typ": "ankuendigung",
+    "titel": "Der Wichtel zieht ein!",
+    "text": "Liebe Kinder, bald kommt der Wichtel zu uns. Bereitet bitte alles vor.",
+    "bild": "",
+    "checkliste": [
+      "Tür bauen",
+      "Bett einrichten",
+      "Lieblingssnack besorgen"
+    ]
+  },
+  {
+    "datum": "2026-11-29",
+    "typ": "pause",
+    "titel": "",
+    "text": "",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-11-30",
+    "typ": "pause",
+    "titel": "",
+    "text": "",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-01",
+    "typ": "brief",
+    "titel": "Brief vom 1. Dezember",
+    "text": "Testtext für den 1. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-02",
+    "typ": "brief",
+    "titel": "Brief vom 2. Dezember",
+    "text": "Testtext für den 2. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-03",
+    "typ": "brief",
+    "titel": "Brief vom 3. Dezember",
+    "text": "Testtext für den 3. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-04",
+    "typ": "brief",
+    "titel": "Brief vom 4. Dezember",
+    "text": "Testtext für den 4. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-05",
+    "typ": "brief",
+    "titel": "Brief vom 5. Dezember",
+    "text": "Testtext für den 5. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-06",
+    "typ": "brief",
+    "titel": "Brief vom 6. Dezember",
+    "text": "Testtext für den 6. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-07",
+    "typ": "brief",
+    "titel": "Brief vom 7. Dezember",
+    "text": "Testtext für den 7. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-08",
+    "typ": "brief",
+    "titel": "Brief vom 8. Dezember",
+    "text": "Testtext für den 8. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-09",
+    "typ": "brief",
+    "titel": "Brief vom 9. Dezember",
+    "text": "Testtext für den 9. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-10",
+    "typ": "brief",
+    "titel": "Brief vom 10. Dezember",
+    "text": "Testtext für den 10. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-11",
+    "typ": "brief",
+    "titel": "Brief vom 11. Dezember",
+    "text": "Testtext für den 11. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-12",
+    "typ": "brief",
+    "titel": "Brief vom 12. Dezember",
+    "text": "Testtext für den 12. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-13",
+    "typ": "brief",
+    "titel": "Brief vom 13. Dezember",
+    "text": "Testtext für den 13. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-14",
+    "typ": "brief",
+    "titel": "Brief vom 14. Dezember",
+    "text": "Testtext für den 14. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-15",
+    "typ": "brief",
+    "titel": "Brief vom 15. Dezember",
+    "text": "Testtext für den 15. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-16",
+    "typ": "brief",
+    "titel": "Brief vom 16. Dezember",
+    "text": "Testtext für den 16. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-17",
+    "typ": "brief",
+    "titel": "Brief vom 17. Dezember",
+    "text": "Testtext für den 17. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-18",
+    "typ": "brief",
+    "titel": "Brief vom 18. Dezember",
+    "text": "Testtext für den 18. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-19",
+    "typ": "brief",
+    "titel": "Brief vom 19. Dezember",
+    "text": "Testtext für den 19. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-20",
+    "typ": "brief",
+    "titel": "Brief vom 20. Dezember",
+    "text": "Testtext für den 20. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-21",
+    "typ": "brief",
+    "titel": "Brief vom 21. Dezember",
+    "text": "Testtext für den 21. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-22",
+    "typ": "brief",
+    "titel": "Brief vom 22. Dezember",
+    "text": "Testtext für den 22. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-23",
+    "typ": "brief",
+    "titel": "Brief vom 23. Dezember",
+    "text": "Testtext für den 23. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  },
+  {
+    "datum": "2026-12-24",
+    "typ": "brief",
+    "titel": "Brief vom 24. Dezember",
+    "text": "Testtext für den 24. Adventsbrief.",
+    "bild": "",
+    "checkliste": []
+  }
+]

@@ -1,0 +1,46 @@
+:root {
+  --papier: #f6efe2;
+  --tinte: #3b2f25;
+  --akzent: #b5473a;
+  --umschlag: #e8d2a6;
+  --schatten: rgba(0, 0, 0, 0.18);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100dvh; display: flex; flex-direction: column;
+  background: var(--papier); color: var(--tinte); font-family: system-ui, sans-serif;
+}
+#buehne { flex: 1; display: grid; place-items: center; padding: 16px; }
+.folie { width: min(92vw, 680px); text-align: center; }
+.gesperrt, .pause { font-size: 72px; opacity: 0.6; }
+.umschlag {
+  width: 100%; aspect-ratio: 4 / 3; background: var(--umschlag);
+  border-radius: 12px; box-shadow: 0 8px 24px var(--schatten);
+  position: relative; cursor: pointer; overflow: hidden;
+  display: grid; place-items: center; font-size: 22px;
+}
+.umschlag::before {
+  content: ""; position: absolute; inset: 0 0 50% 0; background: #d9bd87;
+  clip-path: polygon(0 0, 100% 0, 50% 100%); transform-origin: top;
+  transition: transform 0.8s ease;
+}
+.umschlag.offen::before { transform: rotateX(180deg); }
+.brief {
+  background: #fffdf7; border-radius: 12px; padding: 24px;
+  box-shadow: 0 8px 24px var(--schatten); text-align: left;
+  animation: auftauchen 0.6s ease;
+}
+.brief img { max-width: 100%; border-radius: 8px; }
+.brief label { display: block; margin: 8px 0; font-size: 18px; }
+@keyframes auftauchen { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+#steuerung { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
+#steuerung button { font-size: 32px; min-width: 64px; min-height: 52px; border: none; background: none; color: var(--akzent); }
+#steuerung button:disabled { opacity: 0.25; }
+#vorschau-dialog { position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: grid; place-items: center; }
+#vorschau-dialog[hidden] { display: none; }
+#vorschau-dialog form { background: #fff; padding: 24px; border-radius: 12px; }
+#vorschau-dialog input { font-size: 20px; margin-left: 8px; }
+@media (prefers-color-scheme: dark) {
+  :root { --papier: #2a2320; --tinte: #f1e8d8; --umschlag: #7d6240; }
+  .brief { background: #3a302a; }
+}

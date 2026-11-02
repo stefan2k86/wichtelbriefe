@@ -31,7 +31,7 @@ function zeigeFolie() {
     return;
   }
   if (z === 'pause') {
-    buehne.innerHTML = '<div class="folie"><div class="pause" aria-label="Pause">✦</div></div>';
+    buehne.innerHTML = '<div class="folie"><div class="pause" aria-label="Pause">❄</div></div>';
     return;
   }
   if (geoeffnet.has(brief.datum)) {

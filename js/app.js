@@ -106,3 +106,8 @@ async function start() {
 }
 
 start();
+
+// Offline- und Aktualisierungs-Cache, siehe sw.js. Ohne Unterstützung läuft die Seite trotzdem.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js').catch(() => {});
+}

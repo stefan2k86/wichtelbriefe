@@ -1,12 +1,19 @@
-import { sortiere } from './logik.js';
+import { heuteISO, sortiere } from './logik.js';
 
 const CACHE_KEY = 'wichtel-briefe-cache';
+
+// Das Apps Script kann das Datum als langen Text liefern („Sat Nov 28 2026 09:00:00 GMT+0100 …“).
+// Hier wird jedes Datum auf YYYY-MM-DD gebracht.
+function normalisiereDatum(datum) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(datum)) return datum;
+  return heuteISO(new Date(datum));
+}
 
 // Eine Tabellenzeile wird zu einem Brief. Die Checkliste steht in der Tabelle als Text mit „|“ als Trenner,
 // in der Testdatei als Array.
 export function zeileZuBrief(zeile) {
   return {
-    datum: zeile.datum,
+    datum: normalisiereDatum(zeile.datum),
     typ: zeile.typ,
     titel: zeile.titel ?? '',
     text: zeile.text ?? '',

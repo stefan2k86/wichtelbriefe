@@ -101,7 +101,7 @@ async function start() {
   // Vor dem ersten Brief bleibt die erste Folie (gesperrt) stehen.
   const erreicht = briefe.filter((b) => b.datum <= heute).length;
   index = Math.max(0, erreicht - 1);
-  if (location.search === '?vorschau') vorschauDialog.hidden = false;
+  if (new URLSearchParams(location.search).has('vorschau')) vorschauDialog.hidden = false;
   zeigeFolie();
 }
 

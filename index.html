@@ -8,7 +8,7 @@
   <title>Wichtelbriefe</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <main id="buehne" aria-live="polite"></main>
@@ -18,8 +18,9 @@
     <button id="weiter" aria-label="Nächster Brief">›</button>
   </nav>
   <div id="vorschau-dialog" hidden>
-    <form id="vorschau-form">
-      <label>PIN <input id="pin" type="password" inputmode="numeric" autocomplete="off"></label>
+    <form id="vorschau-form" autocomplete="on">
+      <input type="text" name="benutzername" autocomplete="username" value="Wichtelbriefe" class="nur-browser" tabindex="-1" aria-hidden="true">
+      <label>PIN <input id="pin" name="pin" type="password" inputmode="numeric" autocomplete="current-password"></label>
       <button type="submit">Öffnen</button>
     </form>
   </div>

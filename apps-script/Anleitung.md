@@ -1,6 +1,8 @@
 # Einrichtung der Google Tabelle
 
-1. Neue Google Tabelle anlegen. Das Blatt heißt `Briefe`.
+Die Tabelle `Wichtelbriefe` ist bereits angelegt, mit 27 Platzhalter-Briefen. Link: https://docs.google.com/spreadsheets/d/1OV_PoaMD8JoWHUK5V_DkjMKdf9hPfc4UQZcJd-Ocyqk/edit
+
+1. Die Tabelle im Konto öffnen, unter dem sie liegt. Das Apps Script muss in diesem Konto laufen. Das Blatt heißt `Briefe`, oder das erste Blatt wird genommen.
 2. Erste Zeile (Kopfzeile) exakt so: `datum | typ | titel | text | bild | checkliste`
 3. Pro Brief eine Zeile. Datum als echtes Datum, Typ `ankuendigung`, `brief` oder `pause`.
 4. Bild: die Drive-Datei-ID. Sie steht im Freigabelink zwischen `/d/` und `/view`.

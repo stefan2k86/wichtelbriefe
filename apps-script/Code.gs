@@ -1,6 +1,7 @@
 // Liefert die Briefe aus dem Blatt „Briefe“ als JSON.
 function doGet() {
-  const blatt = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Briefe');
+  const tabelle = SpreadsheetApp.getActiveSpreadsheet();
+  const blatt = tabelle.getSheetByName('Briefe') || tabelle.getSheets()[0];
   const werte = blatt.getDataRange().getValues();
   const kopf = werte.shift();
   const zeilen = werte

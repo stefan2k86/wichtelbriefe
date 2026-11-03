@@ -86,6 +86,8 @@ body::before {
 #steuerung { display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
 #steuerung button { font-size: 32px; min-width: 64px; min-height: 52px; border: none; background: none; color: var(--gold-hell); font-family: inherit; }
 #steuerung button:disabled { opacity: 0.25; }
+/* Unauffälliger Eltern-Knopf oben rechts */
+#eltern { position: fixed; top: 4px; right: 4px; z-index: 3; min-width: 44px; min-height: 44px; border: none; background: none; color: var(--gold-hell); opacity: 0.35; font-size: 22px; cursor: pointer; }
 #vorschau-dialog { position: fixed; inset: 0; z-index: 2; background: rgba(0, 0, 0, 0.55); display: grid; place-items: center; }
 #vorschau-dialog[hidden] { display: none; }
 #vorschau-dialog form {

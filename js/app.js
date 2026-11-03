@@ -77,6 +77,8 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') weiterKnopf.click();
 });
 
+document.getElementById('eltern').addEventListener('click', () => { vorschauDialog.hidden = false; });
+
 vorschauForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const eingabe = document.getElementById('pin').value;

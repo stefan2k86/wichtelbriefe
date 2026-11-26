@@ -5,7 +5,6 @@ import { BRIEFE_URL, PIN_HASH } from './config.js';
 import { pruefePin } from './vorschau.js';
 
 const buehne = document.getElementById('buehne');
-const position = document.getElementById('position');
 const zurueckKnopf = document.getElementById('zurueck');
 const weiterKnopf = document.getElementById('weiter');
 const vorschauDialog = document.getElementById('vorschau-dialog');
@@ -20,18 +19,13 @@ const geoeffnet = new Set();
 function zeigeFolie() {
   const brief = briefe[index];
   if (!brief) { buehne.textContent = 'Noch keine Briefe geladen.'; return; }
-  // In der Vorschau gelten alle Briefe als freigegeben, Pausen bleiben Pausen.
-  const z = vorschauAktiv && brief.typ !== 'pause' ? 'verschlossen' : zustand(brief, heute);
-  position.textContent = `${index + 1} / ${briefe.length}`;
+  // In der Vorschau gelten alle Briefe als freigegeben.
+  const z = vorschauAktiv ? 'verschlossen' : zustand(brief, heute);
   zurueckKnopf.disabled = index === 0;
   weiterKnopf.disabled = index === briefe.length - 1;
 
   if (z === 'gesperrt') {
     buehne.innerHTML = '<div class="folie"><div class="gesperrt" aria-label="Gesperrt">🔒</div></div>';
-    return;
-  }
-  if (z === 'pause') {
-    buehne.innerHTML = '<div class="folie"><div class="pause" aria-label="Pause">❄</div></div>';
     return;
   }
   if (geoeffnet.has(brief.datum)) {
@@ -99,6 +93,8 @@ async function start() {
   } catch {
     briefe = sortiere(leseCache(localStorage) ?? []);
   }
+  // Pausentage werden nicht angezeigt, damit man nicht sieht, an welchen Tagen kein Brief kommt.
+  briefe = briefe.filter((b) => b.typ !== 'pause');
   // Startfolie: der jüngste Eintrag, dessen Datum nicht in der Zukunft liegt.
   // Vor dem ersten Brief bleibt die erste Folie (gesperrt) stehen.
   const erreicht = briefe.filter((b) => b.datum <= heute).length;
